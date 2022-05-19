@@ -1,0 +1,11 @@
+<div class="container">
+
+    <h1>PlantTag</h1>
+
+    <%= simple_form_for [@plant, @plant_tag] do |f| %>
+        <%#= f.association :tag, input_html: {class: "select2"} %>
+        <%= f.association :tag, input_html: { data: {controller: "select2"}} %>
+        <%= f.button :submit %>
+    <% end %>
+
+</div>
